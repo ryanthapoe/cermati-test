@@ -1,0 +1,63 @@
+.newsletter {
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 40rem;
+  background-color: $newsletterBlue;
+  color: $white;
+  transition: all 1000ms ease-in;
+
+  i {
+    align-self: flex-end;
+    padding: 0.5rem 0.5rem 0 0;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+
+  &__hidden {
+    bottom: -20rem;
+  }
+
+  &__content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1.5rem;
+
+    h2 {
+      font-weight: 700;
+    }
+
+    p {
+      line-height: 1.5rem;
+    }
+
+    &__form {
+      @include breakpoint-down(small){
+        flex-direction: column;
+      }
+
+      .newsletter-text {
+        width: 100%;
+        font-size: 0.8rem;
+        border: solid $blue 1px;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+
+        @include breakpoint-down(small){
+          margin-right: 0;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .newsletter-btn {
+        background-color: $orange;
+        font-weight: 700;
+
+        @include breakpoint-down(small){
+          width: 100%;
+        }
+      }
+    }
+  }
+ }

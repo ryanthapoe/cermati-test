@@ -1,0 +1,49 @@
+.highlight{
+  text-align: center;
+  padding: auto;
+  color: $grayText;
+  margin-bottom: 5rem;
+  
+  &__header {
+    margin: 5rem auto;
+    max-width: 50%;
+    line-height: 1.7rem;
+
+    @include breakpoint-down(medium) {
+      max-width: 80%;
+    }
+  }
+
+  &__content {
+    grid-template-columns: auto auto auto;
+    grid-gap: 1.4rem;
+    
+    @include breakpoint-down(medium) {
+      grid-template-columns: auto auto;
+    }
+
+    @include breakpoint-down(small) {
+      grid-template-columns: auto;
+    }
+
+    .card {
+      padding: 0.7rem;
+      border: 2px groove $cardBorder;
+
+      &__header{
+        h3{
+          font-weight: 500;
+        }
+        i {
+          color: $cardIcon;
+          font-size: 1.7rem;
+        }
+      }
+
+      &__content {
+        text-align: left;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
