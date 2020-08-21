@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
   const now = Date.now();
 
   // first time opening newsletter
-  if(savedTime === null && newsletterState === "open") {
+  if(savedTime === null || newsletterState === "open") {
     if(windowHeight/3 > window.screenY){
       newsletter.classList.remove("newsletter__hidden");
     }

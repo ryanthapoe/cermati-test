@@ -25,7 +25,7 @@ body {
 
 @media (max-width: 29.9375em) {
   body {
-    margin-top: 7rem;
+    margin-top: 7.3rem;
   }
 }
 
@@ -101,7 +101,7 @@ h1, h2, h3 {
 
 @media (max-width: 29.9375em) {
   .notification__container {
-    height: 7rem;
+    height: 7.3rem;
     -webkit-transition: all 900ms linear;
     transition: all 900ms linear;
   }
